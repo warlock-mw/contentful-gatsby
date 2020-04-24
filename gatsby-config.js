@@ -40,5 +40,6 @@ module.exports = {
       },
     },
     `test-theme`,
+    `source-qiita-items`,
   ],
 }
