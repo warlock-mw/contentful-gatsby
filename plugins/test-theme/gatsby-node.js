@@ -15,3 +15,14 @@ exports.onCreateWebpackConfig = ({
     },
   })
 }
+
+exports.createPages = ({ actions }) => {
+  const { createPage } = actions
+
+  return [
+    createPage({
+      path: '/blog-post/test',
+      component: path.resolve(__dirname + `/src/templates/blog-post.js`)
+    })
+  ]
+}
